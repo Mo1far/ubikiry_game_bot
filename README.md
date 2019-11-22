@@ -33,3 +33,7 @@ SET ENTRY COST
 ```
 export ENTRY_COST=you entry cost
 ```
+# Run
+```
+$ screen python3.8 main.py
+```
