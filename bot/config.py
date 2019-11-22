@@ -5,7 +5,7 @@ BOT_TOKEN = os.environ.get('BOT_TOKEN')
 ETHERSCAN_API_KEY = os.environ.get('ETHERSCAN_API')
 request_str = 'http://api.etherscan.io/api?module=account&action=txlist&\
 address={}&startblock=0&endblock=99999999&sort=asc&apikey={}'
-TARGET_EPH_ADDRESS = '0x395FC2b949CDcE03a11068A473218E7dBf93C402'
+TARGET_EPH_ADDRESS = os.environ.get('TARGET_EPH_ADDRESS')
 ENTRY_COST = float(os.environ.get('ENTRY_COST'))
 
 admin_list = [213447542, 235619648]
