@@ -1,13 +1,12 @@
 import os
 from datetime import datetime
 from decimal import Decimal
-from bot.texts import texts
-from bot.core import bot
+
 from peewee import *
 from aiogram import types
 
 from bot.config import clan_leader_list
-from bot.utils import SecureLink, reward_calculation, send_round_result, send_seagun_result, send_clan_member_result, \
+from bot.utils import SecureLink, reward_calculation, send_round_result, send_seagun_result, \
     send_user_history_result, send_next_round_date
 
 db = SqliteDatabase('users.db')
