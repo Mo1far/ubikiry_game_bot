@@ -3,8 +3,8 @@ from decimal import Decimal
 from aiogram import types
 from aiogram.dispatcher import FSMContext
 
-from bot.db import User, UserHistory, ClanHistory, Clan
-from bot.core import dp, bot
+from bot.db import User, UserHistory, ClanHistory
+from bot.core import dp
 from bot.texts import texts
 from bot.States import EthereumAddress
 from bot.utils import validate_ethereum_address, reward_calculation
@@ -82,7 +82,6 @@ async def address_processing(msg: types.Message, state: FSMContext):
                 await msg.answer(
                     texts['eth_address']['approve_address_for_admin'].format(clan_id, User.get_ref_link(user.user_id)),
                     reply_markup=kb.main_kb_approve)
-                await msg.answer('Ваша реферальная ссылка - {}'.format(User.get_ref_link(user.user_id)))
                 User.user_approve(msg.from_user.id)
                 await state.finish()
             else:
