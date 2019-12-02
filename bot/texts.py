@@ -12,7 +12,7 @@ Each participant, regardless of their status, will be able to receive their own 
     'eth_address': {
         'request': 'Enter your Ethereum address here to join the game.',
         'address_decline': 'Your ETH address is incorrect or it is already used by another person. Check again and resubmit.',
-        'approve_address': 'Send {} to {} and click “Check” in order to count your funds',
+        'approve_address': 'Send {} ETH to {} and click “Check” in order to count your funds',
         'approve_address_for_admin': 'You are now the head of the clan № {}, congratulations! This is your referral link - {}',
         'approve_processing_decline': 'Maybe you made a mistake or payment has not been made yet. Please verify your status and press “Check” again after 2-3 minutes.',
         'approve_processing_success': 'Your payment was successful, press the button  "About" to get your referral link. By bringing other users to the clan, you can get your Totem animal and increase your rewards!',
