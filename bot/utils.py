@@ -11,7 +11,6 @@ class SecureLink(str):
 
     @staticmethod
     def encode_link(user_id: int, clan_id: int):
-        bot_name = bot.get_me()['name']
         encode_user_id = (user_id + 149) * 3
         encode_clan_id = (clan_id + 149) * 4
         return f'https://telegram.me/ClashofClansonIDLplatformBot?start={encode_user_id}-{encode_clan_id}'
