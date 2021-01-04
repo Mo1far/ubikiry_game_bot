@@ -1,3 +1,6 @@
+# Description
+Refferal game with ethereum integration 
+
 # Cloning this repo
 ```
 git clone https://github.com/Mo1far/ubikiry_game_bot.git
